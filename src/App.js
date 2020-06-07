@@ -1,24 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import './index.css';
+function App ({ name }) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello <b> {name} </b></h1>
+      <p>This is the first assignment to learn react</p>
+      <p>JSX expression  </p> {5 + 10}
     </div>
   );
 }
